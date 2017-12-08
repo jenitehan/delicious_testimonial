@@ -1,0 +1,25 @@
+name: Delicious Testimonial
+type: module
+description: Testimonial content type.
+core: 8.x
+package: Delicious Creative
+dependencies:
+  - field_group
+  - image
+
+config_devel:
+  - core.base_field_override.node.delicious_testimonial.promote
+  - core.base_field_override.node.delicious_testimonial.title
+  - core.entity_form_display.node.delicious_testimonial.default
+  - core.entity_view_display.node.delicious_testimonial.default
+  - core.entity_view_display.node.delicious_testimonial.teaser
+  - field.field.node.delicious_testimonial.field_delicious_testimonial_body
+  - field.field.node.delicious_testimonial.field_delicious_testimonial_co
+  - field.field.node.delicious_testimonial.field_delicious_testimonial_img
+  - field.field.node.delicious_testimonial.field_delicious_testimonial_name
+  - field.storage.node.field_delicious_testimonial_body
+  - field.storage.node.field_delicious_testimonial_co
+  - field.storage.node.field_delicious_testimonial_img
+  - field.storage.node.field_delicious_testimonial_name
+  - image.style.delicious_testimonial_thumb
+  - node.type.delicious_testimonial

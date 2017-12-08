@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains delicious_testimonial.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function delicious_testimonial_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the delicious_testimonial module.
+    case 'help.page.delicious_testimonial':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Testimonial content type.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function delicious_testimonial_theme($existing, $type, $theme, $path) {
+  return [
+    'node__delicious_testimonial' => [
+      'base hook' => 'node',
+    ],
+    'field__node__field_delicious_testimonial_body__delicious_testimonial' => [
+      'base hook' => 'node',
+    ],
+    'field__node__field_delicious_testimonial_co__delicious_testimonial' => [
+      'base hook' => 'node',
+    ],
+    'field__node__field_delicious_testimonial_img__delicious_testimonial' => [
+      'base hook' => 'node',
+    ],
+    'field__node__field_delicious_testimonial_name__delicious_testimonial' => [
+      'base hook' => 'node',
+    ],
+  ];
+}

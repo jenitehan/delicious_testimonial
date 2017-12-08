@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.delicious_testimonial.field_delicious_testimonial_body
+    - field.field.node.delicious_testimonial.field_delicious_testimonial_co
+    - field.field.node.delicious_testimonial.field_delicious_testimonial_img
+    - field.field.node.delicious_testimonial.field_delicious_testimonial_name
+    - image.style.delicious_testimonial_thumb
+    - node.type.delicious_testimonial
+  module:
+    - image
+    - text
+    - user
+id: node.delicious_testimonial.teaser
+targetEntityType: node
+bundle: delicious_testimonial
+mode: teaser
+content:
+  field_delicious_testimonial_body:
+    type: text_trimmed
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_delicious_testimonial_co:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_delicious_testimonial_img:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: delicious_testimonial_thumb
+      image_link: ''
+    third_party_settings: {  }
+  field_delicious_testimonial_name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  links: true

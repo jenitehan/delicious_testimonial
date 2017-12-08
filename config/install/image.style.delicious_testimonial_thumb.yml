@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: delicious_testimonial_thumb
+label: 'Testimonial thumb'
+effects:
+  0c0a0f65-eaba-4be1-a53b-da4ae8507cfa:
+    uuid: 0c0a0f65-eaba-4be1-a53b-da4ae8507cfa
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150

@@ -1,0 +1,5 @@
+delicious-testimonial:
+  css:
+    component:
+      css/delicious-testimonial.css:
+        minified: false
