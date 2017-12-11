@@ -2,6 +2,7 @@ name: Delicious Testimonial
 type: module
 description: Testimonial content type.
 core: 8.x
+version: '8.x-1.0-beta1'
 package: Delicious Creative
 dependencies:
   - field_group
