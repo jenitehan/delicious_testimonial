@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.delicious_testimonial.field_delicious_testimonial_add
     - field.field.node.delicious_testimonial.field_delicious_testimonial_body
-    - field.field.node.delicious_testimonial.field_delicious_testimonial_co
     - field.field.node.delicious_testimonial.field_delicious_testimonial_img
     - field.field.node.delicious_testimonial.field_delicious_testimonial_name
     - image.style.delicious_testimonial_thumb
@@ -17,20 +17,20 @@ targetEntityType: node
 bundle: delicious_testimonial
 mode: default
 content:
-  field_delicious_testimonial_body:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_delicious_testimonial_co:
+  field_delicious_testimonial_add:
     weight: 3
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_delicious_testimonial_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
   field_delicious_testimonial_img:
     weight: 0

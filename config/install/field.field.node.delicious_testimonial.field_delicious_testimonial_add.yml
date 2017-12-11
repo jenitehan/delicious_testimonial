@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_delicious_testimonial_add
+    - node.type.delicious_testimonial
+id: node.delicious_testimonial.field_delicious_testimonial_add
+field_name: field_delicious_testimonial_add
+entity_type: node
+bundle: delicious_testimonial
+label: 'Additional info'
+description: 'Any additional information such as a company name, occupation, or location.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

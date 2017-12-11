@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - node
-id: node.field_delicious_testimonial_co
-field_name: field_delicious_testimonial_co
+id: node.field_delicious_testimonial_add
+field_name: field_delicious_testimonial_add
 entity_type: node
 type: string
 settings:
