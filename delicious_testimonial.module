@@ -32,16 +32,16 @@ function delicious_testimonial_theme($existing, $type, $theme, $path) {
       'base hook' => 'node',
     ],
     'field__node__field_delicious_testimonial_add__delicious_testimonial' => [
-      'base hook' => 'node',
+      'base hook' => 'field',
     ],
     'field__node__field_delicious_testimonial_body__delicious_testimonial' => [
-      'base hook' => 'node',
+      'base hook' => 'field',
     ],
     'field__node__field_delicious_testimonial_img__delicious_testimonial' => [
-      'base hook' => 'node',
+      'base hook' => 'field',
     ],
     'field__node__field_delicious_testimonial_name__delicious_testimonial' => [
-      'base hook' => 'node',
+      'base hook' => 'field',
     ],
   ];
 }
